@@ -152,7 +152,7 @@ font-weight: 600; color: #111;
   font-family: 'Press Start 2P', cursive;
   font-size: 14px;
   padding: 14px 24px;
-  background: linear-gradient(180deg, #ffec61 0%, #f321d7 100%);
+  background: linear-gradient(180deg,rgba(87, 199, 133, 1)  0%, rgba(252, 233, 144, 1) 78%);
   color: #111;
   border: 4px solid #000;
   border-radius: 8px;
@@ -167,3 +167,16 @@ font-weight: 600; color: #111;
   transform: translateY(4px);
   box-shadow: 0 0 #000;
 }
+
+/* allow vertical scroll on pages that need it */
+.screen.scroll {
+  min-height: 100dvh;
+  overflow-y: auto;
+  align-content: start;   /* lets content flow from the top */
+}
+
+body.allow-scroll {
+  overflow-y: auto;       /* re-enable vertical scroll */
+  overflow-x: hidden;     /* still prevent sideways bounce */
+}
+
