@@ -145,3 +145,25 @@ padding: 10px 14px; border-radius: 999px; border: 0;
 background: rgba(255,255,255,.9); box-shadow: 0 8px 18px rgba(0,0,0,.25);
 font-weight: 600; color: #111;
 }
+
+/* === Pixel Back Button === */
+.pixel-btn {
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  padding: 14px 24px;
+  background: linear-gradient(180deg, #ffec61 0%, #f321d7 100%);
+  color: #111;
+  border: 4px solid #000;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px #000;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pixel-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 #000;
+}

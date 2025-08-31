@@ -3,20 +3,74 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Music</title>
+  <title>Our Little Journey</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Pixel font (optional for the heading) -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    .journey-title {
+      font-family: 'Press Start 2P', cursive;
+      font-size: clamp(14px, 5vw, 22px);
+      color: #ff8800;
+      text-align: center;
+      margin-top: 30px;
+      line-height: 1.4;
+    }
+    .journey-logo {
+      display: block;
+      margin: 20px auto;
+      width: 90px; /* adjust to your pixel heart size */
+      image-rendering: pixelated;
+    }
+    .story-card {
+      max-width: 90%;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 18px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    }
+    .story-image {
+      display: block;
+      margin: 18px auto 40px;
+      max-width: 90%;
+      border-radius: 8px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.3);
+    }
+  </style>
 </head>
 <body>
   <main class="screen safe">
     <div class="bg" aria-hidden="true"></div>
     <div class="overlay" aria-hidden="true"></div>
 
-    <button class="back" onclick="history.back()">← Back</button>
+    <h1 class="journey-title">OUR LITTLE<br>JOURNEY!</h1>
 
-    <section class="card" style="text-align:center">
-      <h1 class="title">Music Page</h1>
-      <p>Add your content here.</p>
+    <!-- Replace with your pixel heart image -->
+    <img src="images/pixel-heart.png" alt="Heart" class="journey-logo">
+
+    <section class="story-card">
+        <p>Ngga nyangka udah 10 bulan aja ya sayang? Jujur aku masih ngga nyangka sih, Wanita sekeren, cantik, pinter, berbakat, out of my league parah bisa punya banyak kesamaan sama aku.</p>
+        <p>Mulai dari warna kesukaan, film, hobi yang cocok satu sama lain, dan masih banyak lagi. Semakin aku kenal kamu, semakin aku sadar kalau persamaan yang kita banyak punya dari awal
+            itu ngga bisa dibilang sepenuhnya benar. Karena ternyata, kamu itu jauh lebih keren dari yang aku kira. Sampe sekarang aku suka kepikiran kayak "gila, wasted ga ya teteh sama aku yang banyak kurangnya?" 
+        </p>
+        <p>Walau gitu, teteh ngga pernah nunjukin kalo teteh ngerasa wasted. Teteh selalu bikin aku ngerasa nyaman, diterima, dan dicintai. Teteh itu bener-bener the best unexpected part of my life dahh (cailah).
+            I'm really proud of you, and I want you to know that you mean the world to me. Thank you for being you, and for letting me be a part of your life.
+        </p>
     </section>
+
+    <img src="assets/img/tetehsempro.jpg" alt="Us together" class="story-image">
+
+    <img src="assets/img/tetehcentralmarket.jpg" alt="Us together" class="story-image">
+
+    <div class="back-wrapper">
+      <a href="menu.html" class="pixel-btn">BACK</a>
+    </div>
   </main>
 </body>
 </html>
